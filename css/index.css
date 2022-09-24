@@ -1,0 +1,229 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: url('../img/526c7a6277c8fdfa87e1cfd0338edc35.jpeg');
+    background-size: cover;
+}
+
+.box {
+    height: 700px;
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+}
+
+.box .headTitle {
+    height: 50px;
+    width: 100%;
+}
+
+.box .headTitle a {
+    line-height: 50px;
+    font-size: 48px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    display: block;
+}
+
+#canvas3,
+#canvas4 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+#canvas3 {
+    z-index: 2;
+}
+
+#canvas4 {
+    z-index: 1;
+}
+.box{
+    z-index: 20;
+}
+/* 写字板 */
+.canvas1 {
+    border-radius: 20px;
+    background-color: #b7f2ff;
+}
+
+.canvas1 canvas {
+    box-sizing: border-box;
+    margin: 15px;
+    border-radius: 20px;
+    border: 2px solid #b7f2ff;
+    padding: 10px;
+    background-color: #fff
+}
+
+.content1 .btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content1 .btn ul li {
+    display: inline-block;
+    border: 2px solid #fff;
+    margin-top: 5px;
+}
+
+.content1 .btn ul li a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+}
+
+.btn .btn-left ul .active {
+    border: 3px solid #b7f2ff;
+}
+
+.btn .btn-left ul li:hover {
+    border: 3px solid purple;
+}
+
+.btn .btn-left ul li:nth-child(1) {
+    background-color: black;
+}
+
+.btn .btn-left ul li:nth-child(2) {
+    background-color: blue;
+}
+
+.btn .btn-left ul li:nth-child(3) {
+    background-color: green;
+}
+
+.btn .btn-left ul li:nth-child(4) {
+    background-color: red;
+}
+
+.btn .btn-left ul li:nth-child(5) {
+    background-color: orange;
+}
+
+.btn .btn-left ul li:nth-child(6) {
+    background-color: yellow;
+}
+
+.btn .btn-right ul li {
+    border-style: none;
+}
+
+.btn .btn-right ul li:hover {
+    border: 3px solid purple;
+}
+
+.btn ul li img {
+    width: 35px;
+    height: 35px;
+}
+
+
+/* 绘画板 */
+.canvas2 {
+    border-radius: 20px;
+    background-color: #b7f2ff;
+}
+
+.canvas2 canvas {
+    box-sizing: border-box;
+    margin: 20px;
+    border-radius: 20px;
+    border: 2px solid #b7f2ff;
+    padding: 10px;
+    background-color: #fff
+}
+
+.content2 .btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content2 .btn .btn-left1 ul li {
+    margin: 3px;
+    display: inline-block;
+    list-style: none;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.content2 .btn .btn-left1 ul .active {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid purple;
+}
+
+.content2 .btn .btn-left1 ul li:hover {
+    border: 3px solid #ed83ee;
+}
+
+.content2 .btn .btn-right {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content2 .btn .btn-right-left ul li {
+    display: inline-block;
+    border: 2px solid #fff;
+    margin-top: 5px;
+}
+
+.content2 .btn .btn-right-left ul li a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+}
+
+.content2 .btn .btn-right-left ul .active {
+    border: 3px solid #b7f2ff;
+}
+
+.content2 .btn .btn-right-left ul li:hover {
+    border: 3px solid purple;
+}
+
+.btn-right-left ul li:nth-child(1) {
+    background-color: black;
+}
+
+.btn-right-left ul li:nth-child(2) {
+    background-color: blue;
+}
+
+.btn-right-left ul li:nth-child(3) {
+    background-color: green;
+}
+
+.btn-right-left ul li:nth-child(4) {
+    background-color: red;
+}
+
+.btn-right-left ul li:nth-child(5) {
+    background-color: orange;
+}
+
+.btn-right-left ul li:nth-child(6) {
+    background-color: yellow;
+}
+
+.btn-right-right ul li {
+    display: inline-block;
+}
+
+.btn-right-right ul li img {
+    width: 40px;
+    height: 40px;
+}

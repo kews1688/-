@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="box">
+        <div class="headTitle"><a href="#">练字板</a></div>
+        <!-- 练字板 -->
+        <div class="content1">
+            <div class="canvas1">
+                <canvas></canvas>
+            </div>
+            <div class="btn">
+                <div class="btn-left">
+                    <ul>
+                        <li class="active"><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+                <div class="btn-right">
+                    <ul>
+                        <li><a id="keep" download="write" href="#"><img id="keep_btn" src="./img/下载 (2).png"></a></li>
+                        <li><a id="img2" href="#"><img src="./img/清除.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 绘画板 -->
+        <div class="content2">
+            <div class="btn">
+                <div class="btn-left1">
+                    <ul>
+                        <li id="pen" class="active"><a href="#"><img src="./img/pen.png" alt=""></a></li>
+                        <li id="Line"><a href="#"><img src="./img/Line.png" alt=""></a></li>
+                        <li id="rect"><a href="#"><img src="./img/rectangle.png" alt=""></a></li>
+                        <li id="rect-fill"><a href="#"><img src="./img/rectangle-fill.png" alt=""></a></li>
+                        <li id="arc"><a href="#"><img src="./img/circular.png" alt=""></a></li>
+                        <li id="arc-fill"><a href="#"><img src="./img/circular-fill.png" alt=""></a></li>
+                        <li id="triangle"><a href="#"><img src="./img/triangle.png" alt=""></a></li>
+                        <li id="triangle-fill"><a href="#"><img src="./img/triangle-fill.png" alt=""></a></li>
+                        <li id="LineWidth-one"><a href="#"><img src="./img/Line-one.png" alt=""></a></li>
+                        <li id="LineWidth-two"><a href="#"><img src="./img/Line-two.png" alt=""></a></li>
+                        <li id="LineWidth-three"><a href="#"><img src="./img/Line-three.png" alt=""></a></li>
+                        <li id="eraser"><a href="#"><img src="./img/eraser.png" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="btn-right">
+                    <div class="btn-right-left">
+                        <ul>
+                            <li class="active"><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="btn-right-right">
+                        <ul>
+                            <li><a id="keep2" download="write" href="#"><img id="keep_btn2" src="./img/下载 (2).png"></a>
+                            </li>
+                            <li><a id="img3" href="#"><img src="./img/清除.png"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="canvas2">
+                <div class="box2">
+                    <canvas></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="gameCanvas">
+        <canvas id="canvas3"></canvas>
+        <canvas id="canvas4"></canvas>
+    </div>
+    <script src="./js/jQuery.js"></script>
+    <script src="./js/write.js"></script>
+    <script src="./js/draw.js"></script>
+    <script src="./js/commonFunctions.js"></script>
+    <script src="./js/animation.js"></script>
+    <script src="./js/ane.js"></script>
+    <script src="./js/fruit.js"></script>
+    <script src="./js/fish.js"></script>
+    <script src="./js/collision.js"></script>
+    <script src="./js/data.js"></script>
+    <script>
+        $(".content2").hide();
+        $(".headTitle a").on("click", function () {
+            if ($(".headTitle a").text() == "练字板") {
+                $(".headTitle a").text("绘画板");
+                $(".content1").hide();
+                $(".content2").show();
+            } else {
+                $(".headTitle a").text("练字板");
+                $(".content2").hide();
+                $(".content1").show();
+            }
+        })
+    </script>
+</body>
+
+</html>
